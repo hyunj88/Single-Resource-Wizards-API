@@ -35,7 +35,7 @@ const wizardSchema = new mongoose.Schema(
 // virtuals go here
 // remember these are virtual properties, that use existing data, to add a property whenever we retrieve these documents.
 wizardSchema.virtual('fullTitle').get(function () {
-	return `${this.name} the ${this.type}`
+	return `${this.name} of ${this.house}`
 })
 
 module.exports = mongoose.model('Wizard', wizardSchema)
