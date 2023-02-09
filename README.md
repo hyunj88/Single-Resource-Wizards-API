@@ -27,3 +27,12 @@ This application uses token authentication of sessions.
 | PATCH  | `/change-password/`    | `users#changepw`  |
 | DELETE | `/sign-out/`           | `users#signout`   |
 
+
+### Wands
+
+###### Routes Table
+| Verb   | URI Pattern             | Controller#Action |
+|--------|-------------------------|-------------------|
+| POST   | `/wands/petId`          | `wands#create`    |
+| PATCH  | `/wands/:petId/:toyId`  | `wands#update`    |
+| DELETE | `/wands/:petId/:toyId`  | `wands#delete`    |
