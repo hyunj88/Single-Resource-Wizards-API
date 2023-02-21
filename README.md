@@ -29,8 +29,6 @@ This application uses token authentication of sessions.
 
 
 ### Wands
-
-###### Routes Table
 | Verb   | URI Pattern             | Controller#Action |
 |--------|-------------------------|-------------------|
 | POST   | `/wands/petId`          | `wands#create`    |

@@ -20,7 +20,7 @@ const toySchema = new mongoose.Schema({
         type: String,
         // here we'll use enum, which means we can only specifi strings for this field.
         // enum is a validator on the type String that says "you can only use one of the values within this array"
-        enum: ['new', 'used', 'disgusting'],
+        enum: ['new', 'used', 'broken'],
         default: 'new'
     }
 
