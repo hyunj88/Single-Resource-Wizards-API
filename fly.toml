@@ -5,6 +5,9 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
+[build]
+  builder = "heroku/buildpacks:20"
+
 [env]
   PORT = "8080"
   MONGODB_URI = "mongodb+srv://dvnieljo:newerazoo1988@cluster0.z5cfiae.mongodb.net/wizards?retryWrites=true&w=majority"
